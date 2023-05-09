@@ -13,7 +13,7 @@ void main()
     child: MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context) =>HomeScreen(),
+        '/':(context) =>homescreen(),
       },
     ),
   ));

@@ -1,7 +1,3 @@
-// To parse this JSON data, do
-//
-//     final trainModel = trainModelFromJson(jsonString);
-
 import 'dart:convert';
 
 List<TrainModel> trainModelFromJson(String str) => List<TrainModel>.from(json.decode(str).map((x) => TrainModel.fromJson(x)));

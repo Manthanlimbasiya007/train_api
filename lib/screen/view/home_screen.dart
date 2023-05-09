@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import '../provider/home_provider.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class homescreen extends StatefulWidget {
+  const homescreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<homescreen> createState() => _homescreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _homescreenState extends State<homescreen> {
   HomeProvider? HomeProviderTrue;
   HomeProvider? HomeProviderFalse;
 
@@ -35,7 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
             style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
           ),
           centerTitle: true,
-          elevation: 0,
         ),
         body: FutureBuilder(
           future: HomeProviderFalse!.getTrain(),
